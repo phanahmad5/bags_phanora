@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phanora Bags - Timeless Luxury & Handcrafted Bags</title>
+  <meta name="description"
+    content="Koleksi tas premium Phanora Bags. Hadir dengan desain timeless, material kulit & kanvas berkualitas tinggi, serta craftsmanship terbaik untuk melengkapi gaya elegan Anda.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- Top Announcement Bar: Official Marketplace Links -->
+  <div class="top-bar">
+    <div class="top-bar-container">
+      <div class="top-bar-text">
+        <i class="fa fa-store"></i> <span>Official Store Resmi:</span>
+      </div>
+      <div class="top-bar-links">
+        <a href="https://shopee.co.id" target="_blank" rel="noopener noreferrer" class="top-marketplace-link shopee"
+          title="Kunjungi Phanora Bags di Shopee">
+          <svg class="mp-svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+            <path
+              d="M19.78 7.37c-.16-.38-.52-.62-.94-.62h-2.88c-.22-2.58-2.36-4.63-4.96-4.63s-4.74 2.05-4.96 4.63H3.16c-.42 0-.78.24-.94.62-.16.37-.09.81.18 1.11l2.8 12.16C5.39 21.46 6.08 22 6.89 22h10.22c.81 0 1.5-.54 1.69-1.39l2.8-12.13c.27-.3.34-.74.18-1.11zM11 3.87c1.65 0 3.01 1.25 3.19 2.88H7.81c.18-1.63 1.54-2.88 3.19-2.88zm.9 14.28c-2.4 0-3.9-1.32-3.9-3.07 0-.25.2-.46.45-.46h1.56c.22 0 .41.16.44.38.15.93.88 1.45 1.45 1.45.69 0 1.34-.41 1.34-1.07 0-.71-.56-.99-1.58-1.39-1.55-.6-2.56-1.35-2.56-2.67 0-1.6 1.4-2.8 3.47-2.8 1.97 0 3.35 1.1 3.51 2.66.02.23-.16.43-.39.43h-1.6c-.22 0-.41-.16-.44-.38-.13-.68-.62-1.01-1.08-1.01-.6 0-1.04.38-1.04.92 0 .58.52.84 1.43 1.19 1.68.65 2.71 1.36 2.71 2.87 0 1.67-1.38 2.96-3.74 2.96z" />
+          </svg>
+          Shopee
+        </a>
+        <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" class="top-marketplace-link tiktok"
+          title="Kunjungi Phanora Bags di TikTok Shop">
+          <i class="fab fa-tiktok"></i> TikTok Shop
+        </a>
+        <a href="https://www.lazada.co.id" target="_blank" rel="noopener noreferrer" class="top-marketplace-link lazada"
+          title="Kunjungi Phanora Bags di Lazada">
+          <i class="fa fa-shopping-bag"></i> Lazada
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="navbar" id="navbar">
+      <div class="brand">
+        <a href="#home" class="logo">
+          Phanora<span>.</span>
+        </a>
+        <span class="logo-sub">BAGS & CO.</span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Beranda</a></li>
+        <li><a href="#categories">Kategori</a></li>
+        <li><a href="#products">Koleksi</a></li>
+        <li><a href="#story">Cerita Kami</a></li>
+        <li><a href="#reviews">Ulasan</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Wishlist Button -->
+        <button class="icon-btn" id="navWishlistBtn" title="Daftar Favorit">
+          <i class="far fa-heart"></i>
+          <span class="badge-count" id="wishlistCount" style="display: none;">0</span>
+        </button>
+
+        <!-- Cart Button -->
+        <button class="icon-btn" id="openCartBtn" title="Keranjang Belanja">
+          <i class="fa fa-shopping-bag"></i>
+          <span class="badge-count" id="cartCount" style="display: none;">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="icon-btn menu-toggle" id="menuToggle" title="Menu">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg-wrapper">
+      <img src="hero_banner.jpg" alt="Phanora Bags Luxury Editorial" class="hero-bg-img">
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+      <h1>Kemewahan Nyata <br> Pada Setiap <em>Sentuhan</em></h1>
+      <p>
+        Setiap jilid kisah hidup Anda layak ditemani karya tas dengan presisi terbaik.
+        Phanora Bags menghadirkan perpaduan estetika timeless, siluet modern, dan ketahanan tanpa kompromi.
+      </p>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-primary">
+          <i class="fa fa-shopping-bag"></i> Jelajahi Koleksi
+        </a>
+        <a href="#story" class="btn btn-outline-white">
+          <i class="fa fa-play"></i> Cerita Pembuatan
+        </a>
+      </div>
+
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <h4>100%</h4>
+          <p>Kualitas Asli</p>
+        </div>
+        <div class="stat-item">
+          <h4>25.000+</h4>
+          <p>Pelanggan Setia</p>
+        </div>
+        <div class="stat-item">
+          <h4>30 Hari</h4>
+          <p>Garansi Tukar Baru</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features & Trust Badges -->
+  <section class="features-section">
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fa fa-award"></i>
+        </div>
+        <div class="feature-text">
+          <h3>Material Terbaik</h3>
+          <p>Pilihan kulit vegan & kanvas waterproof berkualitas ekspor.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fa fa-shipping-fast"></i>
+        </div>
+        <div class="feature-text">
+          <h3>Gratis Ongkir</h3>
+          <p>Pengiriman aman bergaransi ke seluruh kota di Indonesia.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fa fa-shield-alt"></i>
+        </div>
+        <div class="feature-text">
+          <h3>Garansi 30 Hari</h3>
+          <p>Jaminan kepuasan belanja dengan layanan tukar tanpa ribet.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fa fa-gift"></i>
+        </div>
+        <div class="feature-text">
+          <h3>Luxury Gift Box</h3>
+          <p>Setiap paket dilengkapi dustbag premium dan kotak eksklusif.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section id="categories" class="categories-section">
+    <div class="section-title-wrap">
+      <span class="section-subtitle">Kategori Pilihan</span>
+      <h2 class="section-title">Temukan Model Yang Sesuai Kepribadian Anda</h2>
+      <p class="section-desc">Dari aktivitas kampus hingga pertemuan profesional, Phanora Bags siap menyempurnakan
+        penampilan Anda.</p>
+    </div>
+
+    <div class="categories-grid">
+      <!-- Category 1 -->
+      <div class="category-card"
+        onclick="document.querySelector('.filter-tab[data-category=\'backpack\']').click(); document.getElementById('products').scrollIntoView({behavior:'smooth'});">
+        <img src="ptr.jpg" alt="Urban Backpacks">
+        <div class="category-overlay">
+          <h3>Backpacks</h3>
+          <span>Lihat 4 Koleksi <i class="fa fa-arrow-right"></i></span>
+        </div>
+      </div>
+
+      <!-- Category 2 -->
+      <div class="category-card"
+        onclick="document.querySelector('.filter-tab[data-category=\'tote\']').click(); document.getElementById('products').scrollIntoView({behavior:'smooth'});">
+        <img src="tote_bag.jpg" alt="Luxury Tote Bags">
+        <div class="category-overlay">
+          <h3>Tote Bags</h3>
+          <span>Lihat Koleksi <i class="fa fa-arrow-right"></i></span>
+        </div>
+      </div>
+
+      <!-- Category 3 -->
+      <div class="category-card"
+        onclick="document.querySelector('.filter-tab[data-category=\'crossbody\']').click(); document.getElementById('products').scrollIntoView({behavior:'smooth'});">
+        <img src="crossbody_bag.jpg" alt="Crossbody Bags">
+        <div class="category-overlay">
+          <h3>Crossbody & Saddle</h3>
+          <span>Lihat Koleksi <i class="fa fa-arrow-right"></i></span>
+        </div>
+      </div>
+
+      <!-- Category 4 -->
+      <div class="category-card"
+        onclick="document.querySelector('.filter-tab[data-category=\'shoulder\']').click(); document.getElementById('products').scrollIntoView({behavior:'smooth'});">
+        <img src="shoulder_bag.jpg" alt="Shoulder Bags">
+        <div class="category-overlay">
+          <h3>Shoulder Bags</h3>
+          <span>Lihat Koleksi <i class="fa fa-arrow-right"></i></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Catalog Section -->
+  <section id="products" class="products-section">
+    <div class="container-inner">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Koleksi Eksklusif</span>
+        <h2 class="section-title">Katalog Produk Phanora</h2>
+        <p class="section-desc">Pilihan tas terlaris yang dirancang dengan perhatian mendalam pada estetika dan fungsi.
+        </p>
+      </div>
+
+      <!-- Filter & Search Bar -->
+      <div class="filter-bar">
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-category="all">Semua Koleksi</button>
+          <button class="filter-tab" data-category="backpack">Backpack</button>
+          <button class="filter-tab" data-category="tote">Tote Bag</button>
+          <button class="filter-tab" data-category="crossbody">Crossbody</button>
+          <button class="filter-tab" data-category="shoulder">Shoulder Bag</button>
+        </div>
+
+        <div class="catalog-search-box">
+          <i class="fa fa-search"></i>
+          <input type="text" id="catalogSearchInput" placeholder="Cari nama atau tipe tas...">
+        </div>
+      </div>
+
+      <!-- Dynamic Product Grid -->
+      <div class="product-grid" id="productGrid">
+        <!-- Products populated via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Story & Craftsmanship -->
+  <section id="story" class="brand-story-section">
+    <div class="story-grid">
+      <div class="story-image-wrap">
+        <img src="hero_banner.jpg" alt="Phanora Bags Craftsmanship">
+        <div class="story-badge-floating">
+          <h4>Handmade Precision</h4>
+          <p>Dibuat oleh pengrajin berpengalaman dengan standar kualitas internasional.</p>
+        </div>
+      </div>
+
+      <div class="story-content">
+        <span class="section-subtitle">Tentang Phanora Bags</span>
+        <h2>Kisah Dibalik Setiap Garis Desain</h2>
+        <p>
+          Berasal dari aspirasi untuk menciptakan tas yang bukan hanya sekadar tempat membawa barang, namun juga simbol
+          kepercayaan diri dan ekspresi personal.
+          Phanora Bags menggabungkan siluet modern dan daya tahan maksimal, memastikan setiap produk tetap menawan
+          sepanjang waktu.
+        </p>
+        <p>
+          Mulai dari pemilihan material kanvas premium yang tahan air hingga jahitan bar-tack bertulang ganda, kami
+          menjamin tas Phanora siap menemani rutinitas harian terpadat Anda.
+        </p>
+
+        <div class="story-features">
+          <div class="story-feature-item">
+            <i class="fa fa-check-circle"></i>
+            <div>
+              <h4>Hardware Tahan Karat</h4>
+              <p>Resleting & buckle logam berlapis pelindung korosi.</p>
+            </div>
+          </div>
+          <div class="story-feature-item">
+            <i class="fa fa-check-circle"></i>
+            <div>
+              <h4>Kenyamanan Ergonomis</h4>
+              <p>Bantalan tali empuk mengurangi tekanan pada pundak.</p>
+            </div>
+          </div>
+          <div class="story-feature-item">
+            <i class="fa fa-check-circle"></i>
+            <div>
+              <h4>Kompartemen Terorganisir</h4>
+              <p>Saku khusus laptop, tumbler, dan aksesori kecil.</p>
+            </div>
+          </div>
+          <div class="story-feature-item">
+            <i class="fa fa-check-circle"></i>
+            <div>
+              <h4>Sentuhan Estetik Timeless</h4>
+              <p>Model anggun yang tak pernah lekang oleh waktu.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Testimonials -->
+  <section id="reviews" class="testimonials-section">
+    <div class="section-title-wrap">
+      <span class="section-subtitle">Apa Kata Mereka</span>
+      <h2 class="section-title">Kepuasan Pelanggan Phanora</h2>
+      <p class="section-desc">Lebih dari puluhan ribu pengguna telah membuktikan kualitas dan kenyamanan Phanora Bags.
+      </p>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+            class="fa fa-star"></i>
+        </div>
+        <p class="testimonial-text">
+          "Tas Lightning Streetpack-nya keren banget! Bahannya tebal, jahitannya rapi, dan laptop 15 inci saya pas masuk
+          dengan aman. Dipakai kuliah dan nongkrong selalu dapat pujian dari teman-teman."
+        </p>
+        <div class="testimonial-author">
+          <div class="avatar-circle">NA</div>
+          <div class="author-info">
+            <h4>Nabila Azzahra</h4>
+            <span><i class="fa fa-check-circle"></i> Pembeli Terverifikasi (Jakarta)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+            class="fa fa-star"></i>
+        </div>
+        <p class="testimonial-text">
+          "Aurelia Leather Tote bener-bener mewah! Kulitnya lembut tapi tetap kokoh berdiri saat diletakkan. Packaging
+          box-nya elegan seperti unboxing brand internasional berharga jutaan."
+        </p>
+        <div class="testimonial-author">
+          <div class="avatar-circle">DK</div>
+          <div class="author-info">
+            <h4>dr. Kirana Pratiwi</h4>
+            <span><i class="fa fa-check-circle"></i> Pembeli Terverifikasi (Surabaya)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+            class="fa fa-star"></i>
+        </div>
+        <p class="testimonial-text">
+          "Pengiriman super cepat dan admin WhatsApp-nya sangat ramah bantu pilih model. Star Edition Backpack-nya
+          enteng banget di punggung walau diisi banyak buku. Pasti bakal repeat order!"
+        </p>
+        <div class="testimonial-author">
+          <div class="avatar-circle">RS</div>
+          <div class="author-info">
+            <h4>Rian Syahputra</h4>
+            <span><i class="fa fa-check-circle"></i> Pembeli Terverifikasi (Bandung)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="faq-section">
+    <div class="section-title-wrap">
+      <span class="section-subtitle">Pusat Bantuan</span>
+      <h2 class="section-title">Pertanyaan Yang Sering Diajukan</h2>
+      <p class="section-desc">Punya pertanyaan seputar produk atau pemesanan? Temukan jawabannya di bawah ini.</p>
+    </div>
+
+    <div class="faq-container">
+      <div class="faq-item active">
+        <div class="faq-header">
+          <h3>Apakah tas Phanora tahan terhadap air (water-resistant)?</h3>
+          <i class="fa fa-chevron-down faq-icon"></i>
+        </div>
+        <div class="faq-body">
+          Ya, semua tas kanvas dan kulit Phanora Bags dilapisi pelindung water-repellent yang aman dari cipratan air dan
+          gerimis ringan, sehingga barang berharga dan laptop Anda tetap terlindungi.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-header">
+          <h3>Berapa lama estimasi pengiriman pesanan?</h3>
+          <i class="fa fa-chevron-down faq-icon"></i>
+        </div>
+        <div class="faq-body">
+          Pesanan diproses dalam 1x24 jam kerja. Untuk wilayah Jabodetabek biasanya tiba dalam 1-2 hari kerja, sedangkan
+          luar pulau Jawa sekitar 2-4 hari kerja dengan asuransi pengiriman penuh.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-header">
+          <h3>Bagaimana proses klaim garansi 30 hari?</h3>
+          <i class="fa fa-chevron-down faq-icon"></i>
+        </div>
+        <div class="faq-body">
+          Jika terdapat kendala jahitan, resleting, atau cacat pabrik dalam kurun 30 hari sejak penerimaan, Anda dapat
+          langsung menghubungi layanan WhatsApp kami untuk penukaran barang baru secara gratis.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-header">
+          <h3>Metode pembayaran apa saja yang didukung?</h3>
+          <i class="fa fa-chevron-down faq-icon"></i>
+        </div>
+        <div class="faq-body">
+          Kami menerima Transfer Bank (BCA, Mandiri, BRI, BNI), QRIS, E-Wallet (GoPay, OVO, ShopeePay), Kartu Kredit,
+          serta opsi COD (Bayar di Tempat) untuk kota-kota tertentu.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter VIP Club -->
+  <section class="newsletter-section">
+    <div class="newsletter-inner">
+      <span class="section-subtitle" style="color: #e5be85;">Eksklusif Untuk Anda</span>
+      <h2>Bergabung dengan Phanora VIP Club</h2>
+      <p>Daftarkan email Anda untuk menerima voucher diskon 10% dan akses lebih awal ke rilis koleksi edisi terbatas
+        kami.</p>
+
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Masukkan alamat email aktif Anda..." required>
+        <button type="submit">Daftar Sekarang</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h3>Phanora.</h3>
+        <p>
+          Menghadirkan koleksi tas premium berkualitas tinggi dengan desain timeless yang menyatukan kenyamanan,
+          fungsionalitas, dan kemewahan gaya hidup modern.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" class="social-link"
+            title="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="social-link"
+            title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Kategori</h4>
+        <ul>
+          <li><a href="#products">Backpacks</a></li>
+          <li><a href="#products">Tote Bags</a></li>
+          <li><a href="#products">Crossbody Bags</a></li>
+          <li><a href="#products">Shoulder Bags</a></li>
+          <li><a href="#products">Limited Series</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Bantuan & Info</h4>
+        <ul>
+          <li><a href="#faq">Panduan Pembelian</a></li>
+          <li><a href="#faq">Status Pengiriman</a></li>
+          <li><a href="#faq">Ketentuan Garansi</a></li>
+          <li><a href="#faq">Tips Perawatan Tas</a></li>
+          <li><a href="#story">Tentang Kami</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Official Store</h4>
+        <ul class="marketplace-footer-links">
+          <li>
+            <a href="https://shopee.co.id" target="_blank" rel="noopener noreferrer" class="footer-mp-item shopee">
+              <svg class="mp-svg" viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
+                <path
+                  d="M19.78 7.37c-.16-.38-.52-.62-.94-.62h-2.88c-.22-2.58-2.36-4.63-4.96-4.63s-4.74 2.05-4.96 4.63H3.16c-.42 0-.78.24-.94.62-.16.37-.09.81.18 1.11l2.8 12.16C5.39 21.46 6.08 22 6.89 22h10.22c.81 0 1.5-.54 1.69-1.39l2.8-12.13c.27-.3.34-.74.18-1.11zM11 3.87c1.65 0 3.01 1.25 3.19 2.88H7.81c.18-1.63 1.54-2.88 3.19-2.88zm.9 14.28c-2.4 0-3.9-1.32-3.9-3.07 0-.25.2-.46.45-.46h1.56c.22 0 .41.16.44.38.15.93.88 1.45 1.45 1.45.69 0 1.34-.41 1.34-1.07 0-.71-.56-.99-1.58-1.39-1.55-.6-2.56-1.35-2.56-2.67 0-1.6 1.4-2.8 3.47-2.8 1.97 0 3.35 1.1 3.51 2.66.02.23-.16.43-.39.43h-1.6c-.22 0-.41-.16-.44-.38-.13-.68-.62-1.01-1.08-1.01-.6 0-1.04.38-1.04.92 0 .58.52.84 1.43 1.19 1.68.65 2.71 1.36 2.71 2.87 0 1.67-1.38 2.96-3.74 2.96z" />
+              </svg>
+              <span>Shopee Mall</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" class="footer-mp-item tiktok">
+              <i class="fab fa-tiktok"></i>
+              <span>TikTok Shop</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.lazada.co.id" target="_blank" rel="noopener noreferrer" class="footer-mp-item lazada">
+              <i class="fa fa-shopping-bag"></i>
+              <span>LazMall Official</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Kontak Butik</h4>
+        <ul class="contact-list">
+          <li>
+            <i class="fa fa-envelope"></i>
+            <span>contact@phanorabags.com</span>
+          </li>
+          <li>
+            <i class="fa fa-phone-alt"></i>
+            <span>+62 812-3456-7890 (WhatsApp)</span>
+          </li>
+          <li>
+            <i class="fa fa-clock"></i>
+            <span>Senin - Sabtu: 09:00 - 20:00 WIB</span>
+          </li>
+          <li>
+            <i class="fa fa-map-marker-alt"></i>
+            <span>Senopati Suites, Jakarta Selatan, Indonesia</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Phanora Bags. Seluruh Hak Cipta Dilindungi.</p>
+      <div class="payment-badges">
+        <span class="pay-badge">BCA</span>
+        <span class="pay-badge">MANDIRI</span>
+        <span class="pay-badge">QRIS</span>
+        <span class="pay-badge">GOPAY</span>
+        <span class="pay-badge">OVO</span>
+        <span class="pay-badge">VISA</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-out Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3><i class="fa fa-shopping-bag"></i> Keranjang Belanja</h3>
+      <button class="close-cart-btn" id="closeCartBtn" title="Tutup Keranjang">
+        <i class="fa fa-times"></i>
+      </button>
+    </div>
+
+    <div class="cart-items-container" id="cartItemsContainer">
+      <!-- Items dynamically populated -->
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-subtotal-row">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">Rp 0</span>
+      </div>
+      <div class="cart-subtotal-row" style="color: var(--color-success); font-size: 0.88rem;">
+        <span>Pengiriman</span>
+        <span>GRATIS</span>
+      </div>
+      <div class="cart-total-row">
+        <span>Total Pembayaran</span>
+        <span id="cartTotal">Rp 0</span>
+      </div>
+
+      <button class="btn-checkout-wa" id="cartCheckoutBtn">
+        <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+      </button>
+
+      <div class="cart-mp-alt">
+        <span>Tersedia juga di Official Store:</span>
+        <div class="cart-mp-links">
+          <a href="https://shopee.co.id" target="_blank" rel="noopener noreferrer" class="cart-mp-link shopee">
+            <svg class="mp-svg" viewBox="0 0 24 24" width="12" height="12" fill="currentColor">
+              <path
+                d="M19.78 7.37c-.16-.38-.52-.62-.94-.62h-2.88c-.22-2.58-2.36-4.63-4.96-4.63s-4.74 2.05-4.96 4.63H3.16c-.42 0-.78.24-.94.62-.16.37-.09.81.18 1.11l2.8 12.16C5.39 21.46 6.08 22 6.89 22h10.22c.81 0 1.5-.54 1.69-1.39l2.8-12.13c.27-.3.34-.74.18-1.11zM11 3.87c1.65 0 3.01 1.25 3.19 2.88H7.81c.18-1.63 1.54-2.88 3.19-2.88zm.9 14.28c-2.4 0-3.9-1.32-3.9-3.07 0-.25.2-.46.45-.46h1.56c.22 0 .41.16.44.38.15.93.88 1.45 1.45 1.45.69 0 1.34-.41 1.34-1.07 0-.71-.56-.99-1.58-1.39-1.55-.6-2.56-1.35-2.56-2.67 0-1.6 1.4-2.8 3.47-2.8 1.97 0 3.35 1.1 3.51 2.66.02.23-.16.43-.39.43h-1.6c-.22 0-.41-.16-.44-.38-.13-.68-.62-1.01-1.08-1.01-.6 0-1.04.38-1.04.92 0 .58.52.84 1.43 1.19 1.68.65 2.71 1.36 2.71 2.87 0 1.67-1.38 2.96-3.74 2.96z" />
+            </svg>
+            Shopee
+          </a>
+          <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" class="cart-mp-link tiktok">
+            <i class="fab fa-tiktok"></i> TikTok
+          </a>
+          <a href="https://www.lazada.co.id" target="_blank" rel="noopener noreferrer" class="cart-mp-link lazada">
+            <i class="fa fa-shopping-bag"></i> Lazada
+          </a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Quick View Modal -->
+  <div class="modal-overlay" id="quickViewModal">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="closeQuickViewBtn" title="Tutup">
+        <i class="fa fa-times"></i>
+      </button>
+
+      <div class="modal-image-col">
+        <img id="modalImg" src="" alt="Detail Produk">
+      </div>
+
+      <div class="modal-details-col">
+        <span class="modal-cat-tag" id="modalCat"></span>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <div class="modal-price" id="modalPrice"></div>
+        <p class="modal-desc" id="modalDesc"></p>
+
+        <ul class="modal-features-list" id="modalFeatures">
+          <!-- Features -->
+        </ul>
+
+        <div class="modal-actions">
+          <button class="btn btn-primary" id="modalAddToCartBtn" style="flex-grow: 1;">
+            <i class="fa fa-shopping-bag"></i> Tambah ke Keranjang
+          </button>
+        </div>
+
+        <div class="modal-marketplaces">
+          <span class="modal-mp-title"><i class="fa fa-store"></i> Atau beli via Marketplace Resmi:</span>
+          <div class="modal-mp-buttons">
+            <a href="https://shopee.co.id" target="_blank" rel="noopener noreferrer" class="btn-mp-option btn-mp-shopee"
+              title="Beli di Shopee">
+              <svg class="mp-svg" viewBox="0 0 24 24" width="13" height="13" fill="currentColor">
+                <path
+                  d="M19.78 7.37c-.16-.38-.52-.62-.94-.62h-2.88c-.22-2.58-2.36-4.63-4.96-4.63s-4.74 2.05-4.96 4.63H3.16c-.42 0-.78.24-.94.62-.16.37-.09.81.18 1.11l2.8 12.16C5.39 21.46 6.08 22 6.89 22h10.22c.81 0 1.5-.54 1.69-1.39l2.8-12.13c.27-.3.34-.74.18-1.11zM11 3.87c1.65 0 3.01 1.25 3.19 2.88H7.81c.18-1.63 1.54-2.88 3.19-2.88zm.9 14.28c-2.4 0-3.9-1.32-3.9-3.07 0-.25.2-.46.45-.46h1.56c.22 0 .41.16.44.38.15.93.88 1.45 1.45 1.45.69 0 1.34-.41 1.34-1.07 0-.71-.56-.99-1.58-1.39-1.55-.6-2.56-1.35-2.56-2.67 0-1.6 1.4-2.8 3.47-2.8 1.97 0 3.35 1.1 3.51 2.66.02.23-.16.43-.39.43h-1.6c-.22 0-.41-.16-.44-.38-.13-.68-.62-1.01-1.08-1.01-.6 0-1.04.38-1.04.92 0 .58.52.84 1.43 1.19 1.68.65 2.71 1.36 2.71 2.87 0 1.67-1.38 2.96-3.74 2.96z" />
+              </svg>
+              Shopee
+            </a>
+            <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer"
+              class="btn-mp-option btn-mp-tiktok" title="Beli di TikTok Shop">
+              <i class="fab fa-tiktok"></i> TikTok Shop
+            </a>
+            <a href="https://www.lazada.co.id" target="_blank" rel="noopener noreferrer"
+              class="btn-mp-option btn-mp-lazada" title="Beli di Lazada">
+              <i class="fa fa-shopping-bag"></i> Lazada
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toastNotification">
+    <i class="fa fa-check-circle"></i>
+    <span id="toastMessage">Produk ditambahkan ke keranjang!</span>
+  </div>
+
+  <!-- Floating WhatsApp Customer Service Button -->
+  <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Phanora%20Bags,%20saya%20ingin%20tanya%20seputar%20koleksi%20tas"
+    class="floating-wa-btn" target="_blank" rel="noopener noreferrer" title="Hubungi Kami via WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+</body>
+
+</html>
